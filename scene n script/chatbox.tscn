@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://blfswhuihacwr"]
+[gd_scene load_steps=3 format=3 uid="uid://blfswhuihacwr"]
 
 [ext_resource type="Script" path="res://scene n script/chatbox.gd" id="1_wbp55"]
+[ext_resource type="Texture2D" uid="uid://cm0nd75ojoa5o" path="res://assets/bluedressadventurer.png" id="2_ur1sk"]
 
 [node name="chatbox" type="Control"]
 layout_mode = 3
@@ -28,3 +29,9 @@ offset_right = 691.0
 offset_bottom = 302.0
 theme_override_font_sizes/font_size = 20
 text = "asdcmknadksnakfdnknknknknknknknknknknknknknknknkn"
+
+[node name="Bluedressadventurer" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(256, 448)
+scale = Vector2(2, 2)
+texture = ExtResource("2_ur1sk")

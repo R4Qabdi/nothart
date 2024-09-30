@@ -1,0 +1,7 @@
+[style name="vnstyle"]
+join meliss right
+meliss: halo, (nanti aku ganti ekspresinya
+update meliss left [animation="Shake Y" move_time="0.5"]
+meliss: yaya
+leave meliss [animation="Slide Out Right"]
+meliss: iyaa

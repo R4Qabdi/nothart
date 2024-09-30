@@ -5,3 +5,4 @@ func _ready() -> void:
 	ganti()
 func ganti():
 	get_window().content_scale_size = vport
+	Dialogic.start("siblok")

@@ -1,8 +1,20 @@
-[gd_scene load_steps=2 format=3 uid="uid://h48uyueh48ve"]
+[gd_scene load_steps=4 format=3 uid="uid://h48uyueh48ve"]
 
 [ext_resource type="Script" path="res://scene n script/whole.gd" id="1_pf54f"]
+[ext_resource type="PackedScene" uid="uid://xisw61s1xlyh" path="res://scene n script/player.tscn" id="2_0hrn0"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="5_hkib2"]
 
 [node name="whole" type="Node2D"]
 script = ExtResource("1_pf54f")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="rplayer" type="Node" parent="."]
+
+[node name="player" parent="rplayer" instance=ExtResource("2_0hrn0")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+physics_interpolation_mode = 2
+zoom = Vector2(2, 2)
+editor_draw_limits = true
+
+[node name="PhantomCameraHost" type="Node" parent="Camera2D"]
+script = ExtResource("5_hkib2")

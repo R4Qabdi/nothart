@@ -56,4 +56,4 @@ script = ExtResource("10_u23l5")
 name = "vnstyle"
 base_overrides = {}
 layers = Array[ExtResource("1_j3ss3")]([SubResource("Resource_3yunc"), SubResource("Resource_70red"), SubResource("Resource_n38mi"), SubResource("Resource_bq37a"), SubResource("Resource_blel0"), SubResource("Resource_elux7"), SubResource("Resource_ynbkq"), SubResource("Resource_2kf2i")])
-metadata/_latest_layer = 4
+metadata/_latest_layer = 3

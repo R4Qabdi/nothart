@@ -56,4 +56,4 @@ script = ExtResource("10_vm6ny")
 name = "style awal"
 base_overrides = {}
 layers = Array[ExtResource("1_uqko4")]([SubResource("Resource_n1x2a"), SubResource("Resource_a1mla"), SubResource("Resource_i51ib"), SubResource("Resource_l22wv"), SubResource("Resource_yagu4"), SubResource("Resource_ks2gf"), SubResource("Resource_n1sgn"), SubResource("Resource_ob7kb")])
-metadata/_latest_layer = 7
+metadata/_latest_layer = 3

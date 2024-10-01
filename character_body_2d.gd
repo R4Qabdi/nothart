@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var SPEED = 1000
+@export var SPEED = 10000
 
 func _physics_process(delta: float) -> void:
 	var direction := Input.get_vector("kiri","kanan","atas","bawah")

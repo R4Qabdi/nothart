@@ -1,9 +1,7 @@
-[gd_scene load_steps=12 format=3 uid="uid://xisw61s1xlyh"]
+[gd_scene load_steps=9 format=3 uid="uid://xisw61s1xlyh"]
 
 [ext_resource type="Script" path="res://character_body_2d.gd" id="1_j42gc"]
 [ext_resource type="Texture2D" uid="uid://cjkmg5kw70fv5" path="res://assets/widerchibiat.png" id="2_xd1b6"]
-[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="3_7o5wg"]
-[ext_resource type="Script" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="4_bagd2"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ub44y"]
 
@@ -43,12 +41,6 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="Resource" id="Resource_qxwcr"]
-script = ExtResource("4_bagd2")
-duration = 1.0
-transition = 0
-ease = 2
-
 [node name="player" type="CharacterBody2D"]
 script = ExtResource("1_j42gc")
 
@@ -58,10 +50,3 @@ shape = SubResource("CircleShape2D_ub44y")
 [node name="anim" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_pxrc7")
 animation = &"jalan"
-
-[node name="PhantomCamera2D" type="Node2D" parent="."]
-script = ExtResource("3_7o5wg")
-follow_mode = 2
-zoom = Vector2(2, 2)
-tween_resource = SubResource("Resource_qxwcr")
-draw_limits = true

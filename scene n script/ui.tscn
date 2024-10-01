@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://d1fkp8xl8edlt"]
+
+[ext_resource type="Script" path="res://scene n script/ui.gd" id="1_xwel7"]
+[ext_resource type="PackedScene" uid="uid://dmr0fcamx7t56" path="res://addons/virtual_joystick/virtual_joystick_scene.tscn" id="2_fbrh4"]
+
+[node name="Ui" type="CanvasLayer"]
+script = ExtResource("1_xwel7")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 984.0
+offset_top = 24.0
+offset_right = 1088.0
+offset_bottom = 48.0
+text = "exit"
+
+[node name="Virtual Joystick" parent="." instance=ExtResource("2_fbrh4")]
+action_left = "kiri"
+action_right = "kanan"
+action_up = "atas"
+action_down = "bawah"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://c4ermi86fefcq"]
+
+[sub_resource type="TileSet" id="TileSet_s3qa3"]
+
+[node name="Devgaea" type="TileMap"]
+tile_set = SubResource("TileSet_s3qa3")
+format = 2

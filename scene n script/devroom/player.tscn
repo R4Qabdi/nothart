@@ -1,0 +1,52 @@
+[gd_scene load_steps=9 format=3 uid="uid://xisw61s1xlyh"]
+
+[ext_resource type="Script" path="res://scene n script/devroom/character_body_2d.gd" id="1_umo6o"]
+[ext_resource type="Texture2D" uid="uid://cjkmg5kw70fv5" path="res://assets/widerchibiat.png" id="2_xd1b6"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ub44y"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h42a8"]
+atlas = ExtResource("2_xd1b6")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v7efi"]
+atlas = ExtResource("2_xd1b6")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8i4py"]
+atlas = ExtResource("2_xd1b6")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_md1ht"]
+atlas = ExtResource("2_xd1b6")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pxrc7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h42a8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v7efi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8i4py")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_md1ht")
+}],
+"loop": true,
+"name": &"jalan",
+"speed": 5.0
+}]
+
+[node name="player" type="CharacterBody2D"]
+script = ExtResource("1_umo6o")
+
+[node name="hitbox" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_ub44y")
+
+[node name="anim" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_pxrc7")
+animation = &"jalan"

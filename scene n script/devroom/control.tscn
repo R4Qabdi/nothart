@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://bpw0i31qy2h7k"]
+
+[ext_resource type="Script" path="res://scene n script/devroom/control.gd" id="1_2lbfc"]
+[ext_resource type="PackedScene" uid="uid://dmr0fcamx7t56" path="res://addons/virtual_joystick/virtual_joystick_scene.tscn" id="2_mhxyp"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2lbfc")
+
+[node name="exit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1024.0
+offset_top = 24.0
+offset_right = 1128.0
+offset_bottom = 72.0
+text = "exit
+"
+
+[node name="Virtual Joystick" parent="." instance=ExtResource("2_mhxyp")]
+layout_mode = 1
+joystick_mode = 1
+action_left = "kiri"
+action_right = "kanan"
+action_up = "atas"
+action_down = "bawah"
+
+[connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]

@@ -14,6 +14,7 @@ offset_bottom = 48.0
 text = "exit"
 
 [node name="Virtual Joystick" parent="." instance=ExtResource("2_fbrh4")]
+joystick_mode = 1
 action_left = "kiri"
 action_right = "kanan"
 action_up = "atas"

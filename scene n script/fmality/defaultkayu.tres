@@ -1,0 +1,30 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://c6bbf84fvjspx"]
+
+[ext_resource type="FontFile" uid="uid://2l67oxw2d2jj" path="res://assets/maling/FreeSerif.ttf" id="1_tt4l4"]
+[ext_resource type="StyleBox" uid="uid://bsvpup87qof0e" path="res://scene n script/fmality/new_style_box_texture.tres" id="2_sxgt0"]
+
+[resource]
+Button/colors/font_color = Color(0.433926, 0.353258, 0.164903, 1)
+Button/colors/font_disabled_color = Color(0.875, 0.875, 0.875, 0.5)
+Button/colors/font_focus_color = Color(0.640097, 0.530398, 0.283218, 1)
+Button/colors/font_hover_color = Color(0.736919, 0.607813, 0.322079, 1)
+Button/colors/font_hover_pressed_color = Color(0.835294, 0.701961, 0.411765, 1)
+Button/colors/font_outline_color = Color(0, 0, 0, 1)
+Button/colors/font_pressed_color = Color(0.936087, 0.809845, 0.558493, 1)
+Button/colors/icon_disabled_color = Color(1, 1, 1, 0.4)
+Button/colors/icon_focus_color = Color(1, 1, 1, 1)
+Button/colors/icon_hover_color = Color(1, 1, 1, 1)
+Button/colors/icon_hover_pressed_color = Color(1, 1, 1, 1)
+Button/colors/icon_normal_color = Color(1, 1, 1, 1)
+Button/colors/icon_pressed_color = Color(1, 1, 1, 1)
+Button/constants/align_to_largest_stylebox = 0
+Button/constants/h_separation = 4
+Button/constants/icon_max_width = 0
+Button/constants/outline_size = 0
+Button/font_sizes/font_size = 24
+Button/fonts/font = ExtResource("1_tt4l4")
+Button/styles/disabled = ExtResource("2_sxgt0")
+Button/styles/focus = ExtResource("2_sxgt0")
+Button/styles/hover = ExtResource("2_sxgt0")
+Button/styles/normal = ExtResource("2_sxgt0")
+Button/styles/pressed = ExtResource("2_sxgt0")

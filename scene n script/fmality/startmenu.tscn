@@ -1,0 +1,55 @@
+[gd_scene load_steps=3 format=3 uid="uid://ck4h2x6qmu4m1"]
+
+[ext_resource type="Texture2D" uid="uid://bpbe2feg38836" path="res://assets/menu/otw bntr.png" id="1_7c1ca"]
+[ext_resource type="Theme" uid="uid://c6bbf84fvjspx" path="res://scene n script/fmality/defaultkayu.tres" id="2_4pwr6"]
+
+[node name="startlayer" type="CanvasLayer"]
+
+[node name="startroot" type="Node2D" parent="."]
+
+[node name="OtwBntr" type="Sprite2D" parent="startroot"]
+position = Vector2(576, 344)
+texture = ExtResource("1_7c1ca")
+
+[node name="Control" type="Control" parent="startroot"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="startnew" type="Button" parent="startroot/Control"]
+layout_mode = 0
+offset_left = 512.0
+offset_top = 128.0
+offset_right = 768.0
+offset_bottom = 192.0
+theme = ExtResource("2_4pwr6")
+text = "Start New Game"
+
+[node name="continue" type="Button" parent="startroot/Control"]
+layout_mode = 0
+offset_left = 512.0
+offset_top = 256.0
+offset_right = 768.0
+offset_bottom = 320.0
+theme = ExtResource("2_4pwr6")
+disabled = true
+text = "Continue"
+
+[node name="load" type="Button" parent="startroot/Control"]
+layout_mode = 0
+offset_left = 512.0
+offset_top = 384.0
+offset_right = 768.0
+offset_bottom = 448.0
+theme = ExtResource("2_4pwr6")
+text = "Load"
+
+[node name="back" type="Button" parent="startroot/Control"]
+layout_mode = 0
+offset_left = 576.0
+offset_top = 512.0
+offset_right = 768.0
+offset_bottom = 552.0
+theme = ExtResource("2_4pwr6")
+text = "Back"

@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="etheria universe"
-run/main_scene="res://scene n script/devroom/whole.tscn"
+run/main_scene="res://scene n script/fmality/mainmenu.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 boot_splash/bg_color=Color(0.189904, 0.243726, 0.290078, 1)
 boot_splash/image="res://assets/logo.png"

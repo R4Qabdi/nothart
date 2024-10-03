@@ -1,21 +1,342 @@
-[gd_scene load_steps=3 format=3 uid="uid://c21bod5wwy3oh"]
+[gd_scene load_steps=13 format=3 uid="uid://c21bod5wwy3oh"]
 
-[ext_resource type="Texture2D" uid="uid://gvl1ylwdjcts" path="res://assets/menu1.png" id="1_37jmm"]
-[ext_resource type="Texture2D" uid="uid://p7krfn7jtym1" path="res://assets/menu2.png" id="2_qek5c"]
+[ext_resource type="Script" path="res://scene n script/fmality/mainmenu.gd" id="1_dhwc7"]
+[ext_resource type="Texture2D" uid="uid://dby807wjdrx5d" path="res://assets/maling/rm222batch5-kul-06.jpg" id="1_f6tvy"]
+[ext_resource type="Theme" uid="uid://c6bbf84fvjspx" path="res://scene n script/fmality/defaultkayu.tres" id="3_4mq0q"]
+[ext_resource type="PackedScene" uid="uid://bxbafmbq4xiba" path="res://scene n script/fmality/savemenu.tscn" id="6_2ewy4"]
+[ext_resource type="Texture2D" uid="uid://bdl4kmpp3lwss" path="res://assets/menu/menuname.png" id="7_jm800"]
+[ext_resource type="PackedScene" uid="uid://ck4h2x6qmu4m1" path="res://scene n script/fmality/startmenu.tscn" id="10_j03a0"]
 
-[node name="Control" type="Control"]
-layout_mode = 3
+[sub_resource type="Animation" id="Animation_qvqn0"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("startlayer:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("startlayer/startroot:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, -600)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("startlayer/startroot:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("saveLayer/saveroot:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("saveLayer/saveroot:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("saveLayer:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_wbuqk"]
+resource_name = "keluarstart"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("startlayer/startroot:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 600)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("startlayer:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("startlayer/startroot:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_wpg2f"]
+resource_name = "masukstart"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("startlayer:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("startlayer/startroot:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, -600), Vector2(0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("startlayer/startroot:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_a84qo"]
+resource_name = "masuksav"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("saveLayer/saveroot:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(338, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("saveLayer/saveroot:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("saveLayer:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_8gd7y"]
+resource_name = "keluarsav"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("saveLayer/saveroot:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(336, 0), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("saveLayer/saveroot:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("saveLayer:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_d6jyy"]
+_data = {
+"RESET": SubResource("Animation_qvqn0"),
+"keluarsav": SubResource("Animation_8gd7y"),
+"keluarstart": SubResource("Animation_wbuqk"),
+"masuksav": SubResource("Animation_a84qo"),
+"masukstart": SubResource("Animation_wpg2f")
+}
+
+[node name="Control" type="CanvasLayer"]
+script = ExtResource("1_dhwc7")
+metadata/_edit_lock_ = true
+
+[node name="ani" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_d6jyy")
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(0.117522, 0.27259, 0.114755, 1)
+self_modulate = Color(0, 1, 1, 1)
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -1672.0
+offset_top = -1344.0
+offset_right = 2177.0
+offset_bottom = 1342.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("1_f6tvy")
 metadata/_edit_lock_ = true
 
-[node name="Menu1" type="Sprite2D" parent="."]
-position = Vector2(320, 384)
-texture = ExtResource("1_37jmm")
+[node name="start" type="Button" parent="."]
+offset_left = 128.0
+offset_top = 320.0
+offset_right = 320.0
+offset_bottom = 368.0
+theme = ExtResource("3_4mq0q")
+text = "START"
 
-[node name="Menu2" type="Sprite2D" parent="."]
-position = Vector2(768, 376)
-texture = ExtResource("2_qek5c")
+[node name="option" type="Button" parent="."]
+offset_left = 128.0
+offset_top = 384.0
+offset_right = 320.0
+offset_bottom = 432.0
+theme = ExtResource("3_4mq0q")
+text = "OPTION"
+
+[node name="Label" type="Label" parent="option"]
+layout_mode = 0
+offset_left = -120.0
+offset_top = 40.0
+offset_right = -4.0
+offset_bottom = 89.0
+text = "option & credit
+belum dibikin"
+
+[node name="credit" type="Button" parent="."]
+offset_left = 128.0
+offset_top = 448.0
+offset_right = 320.0
+offset_bottom = 496.0
+theme = ExtResource("3_4mq0q")
+text = "CREDIT"
+
+[node name="exit" type="Button" parent="."]
+offset_left = 128.0
+offset_top = 512.0
+offset_right = 320.0
+offset_bottom = 560.0
+theme = ExtResource("3_4mq0q")
+text = "EXIT"
+
+[node name="Menuname" type="Sprite2D" parent="."]
+position = Vector2(224, 192)
+texture = ExtResource("7_jm800")
+
+[node name="saveLayer" parent="." instance=ExtResource("6_2ewy4")]
+visible = false
+
+[node name="saveroot" parent="saveLayer" index="0"]
+modulate = Color(1, 1, 1, 0)
+
+[node name="startlayer" parent="." instance=ExtResource("10_j03a0")]
+visible = false
+
+[node name="startroot" parent="startlayer" index="0"]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(0, -600)
+
+[connection signal="pressed" from="start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="option" to="." method="_on_option_pressed"]
+[connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="saveLayer/saveroot/Control/back" to="." method="_on_savback_pressed"]
+[connection signal="pressed" from="startlayer/startroot/Control/startnew" to="." method="_on_startnew_pressed"]
+[connection signal="pressed" from="startlayer/startroot/Control/load" to="." method="_on_load_pressed"]
+[connection signal="pressed" from="startlayer/startroot/Control/back" to="." method="_on_back_pressed"]
+
+[editable path="saveLayer"]
+[editable path="startlayer"]

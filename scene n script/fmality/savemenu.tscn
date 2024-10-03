@@ -1,0 +1,57 @@
+[gd_scene load_steps=3 format=3 uid="uid://bxbafmbq4xiba"]
+
+[ext_resource type="Texture2D" uid="uid://bpbe2feg38836" path="res://assets/menu/otw bntr.png" id="1_bs3sn"]
+[ext_resource type="Theme" uid="uid://c6bbf84fvjspx" path="res://scene n script/fmality/defaultkayu.tres" id="2_bjkca"]
+
+[node name="saveLayer" type="CanvasLayer"]
+
+[node name="saveroot" type="Node2D" parent="."]
+
+[node name="OtwBntr" type="Sprite2D" parent="saveroot"]
+position = Vector2(576, 344)
+texture = ExtResource("1_bs3sn")
+
+[node name="Control" type="Control" parent="saveroot"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="save1" type="Button" parent="saveroot/Control"]
+layout_mode = 0
+offset_left = 512.0
+offset_top = 128.0
+offset_right = 768.0
+offset_bottom = 192.0
+theme = ExtResource("2_bjkca")
+disabled = true
+text = "Save 1"
+
+[node name="save2" type="Button" parent="saveroot/Control"]
+layout_mode = 0
+offset_left = 512.0
+offset_top = 256.0
+offset_right = 768.0
+offset_bottom = 320.0
+theme = ExtResource("2_bjkca")
+disabled = true
+text = "Save 2"
+
+[node name="save3" type="Button" parent="saveroot/Control"]
+layout_mode = 0
+offset_left = 512.0
+offset_top = 384.0
+offset_right = 768.0
+offset_bottom = 448.0
+theme = ExtResource("2_bjkca")
+disabled = true
+text = "Save 3"
+
+[node name="back" type="Button" parent="saveroot/Control"]
+layout_mode = 0
+offset_left = 576.0
+offset_top = 512.0
+offset_right = 768.0
+offset_bottom = 552.0
+theme = ExtResource("2_bjkca")
+text = "Back"

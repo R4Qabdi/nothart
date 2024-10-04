@@ -28,6 +28,7 @@ func _on_savback_pressed() -> void:
 func _on_back_pressed() -> void:
 	if onsav :
 		$ani.play("keluarsav")
+	onsav = false
 	$ani.queue("keluarstart")
 
 func _on_load_pressed() -> void:

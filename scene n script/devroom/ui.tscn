@@ -6,20 +6,6 @@
 [node name="Ui" type="CanvasLayer"]
 script = ExtResource("1_xwel7")
 
-[node name="Button" type="Button" parent="."]
-offset_left = 984.0
-offset_top = 24.0
-offset_right = 1088.0
-offset_bottom = 48.0
-text = "exit"
-
-[node name="Virtual Joystick" parent="." instance=ExtResource("2_fbrh4")]
-joystick_mode = 1
-action_left = "kiri"
-action_right = "kanan"
-action_up = "atas"
-action_down = "bawah"
-
 [node name="Button2" type="Button" parent="."]
 offset_left = 55.0
 offset_top = 49.0
@@ -27,5 +13,37 @@ offset_right = 160.0
 offset_bottom = 72.0
 text = "debug VN"
 
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[node name="Button" type="Button" parent="."]
+offset_left = 984.0
+offset_top = 24.0
+offset_right = 1088.0
+offset_bottom = 55.0
+text = "exit"
+
+[node name="Virtual Joystick" parent="." instance=ExtResource("2_fbrh4")]
+offset_top = -264.0
+offset_right = 256.0
+size_flags_horizontal = 3
+joystick_mode = 1
+action_left = "kiri"
+action_right = "kanan"
+action_up = "atas"
+action_down = "bawah"
+
+[node name="serang" parent="." instance=ExtResource("2_fbrh4")]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -256.0
+offset_top = -264.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 0
+joystick_mode = 1
+action_left = "kiri"
+action_right = "kanan"
+action_up = "atas"
+action_down = "bawah"
+
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

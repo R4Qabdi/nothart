@@ -8,16 +8,16 @@
 "sound_moods": {},
 "style": "mofo"
 },
-"default_portrait": "caroline",
+"default_portrait": "bluedressadventurer",
 "description": "",
-"display_name": "caroline",
+"display_name": "meliss",
 "mirror": false,
 "nicknames": [""],
 "offset": Vector2(0, 0),
 "portraits": {
-"caroline": {
+"bluedressadventurer": {
 "export_overrides": {
-"image": "\"res://dialogia/chars/caroline/caroline.png\""
+"image": "\"res://dialogia/chars/meliss/bluedressadventurer.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),

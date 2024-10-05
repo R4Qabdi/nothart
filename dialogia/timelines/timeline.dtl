@@ -1,1 +1,19 @@
-setting  = ""
+[style name="mofo"]
+join caroline left [animation="Bounce In"]
+join meliss right [animation="Fade In Up"]
+bruhhhhh\
+berdua tiba tiba muncul
+update caroline [animation="Shake Y" length="1.0" repeat="4"]
+meliss: jadi gini\
+gw pake baju ini gatau juga anjir
+caroline: kalo gitu ngapain dipake juga anjir
+update caroline center [animation="Shake Y" move_time="0.5"]
+update meliss center [animation="Heartbeat" move_time="0.5"]
+biar kelihatan doang animasinya\
+
+join caroline right [animation="Fade In Down"]
+join meliss left [animation="Fade In Down"]
+jadi... ternyata ga mixel ya\
+mantap
+join meliss center [animation="Zoom Center In" mirrored="true"]
+masih ngetes aku disini

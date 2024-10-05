@@ -1,0 +1,61 @@
+[gd_resource type="Resource" script_class="DialogicStyle" load_steps=19 format=3 uid="uid://djb5jyplk4edp"]
+
+[ext_resource type="Script" path="res://addons/dialogic/Resources/dialogic_style_layer.gd" id="1_jyy5g"]
+[ext_resource type="PackedScene" uid="uid://c1k5m0w3r40xf" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn" id="2_4n1mh"]
+[ext_resource type="PackedScene" uid="uid://cy1y14inwkplb" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Portraits/vn_portrait_layer.tscn" id="3_wgg6b"]
+[ext_resource type="PackedScene" uid="uid://cn674foxwedqu" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn" id="4_koxg5"]
+[ext_resource type="PackedScene" uid="uid://bquja8jyk8kbr" path="res://dialogia/styles/VisualNovelTextbox/custom_vn_textbox_layer.tscn" id="5_uokx6"]
+[ext_resource type="PackedScene" uid="uid://dsbwnp5hegnu3" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/glossary_popup_layer.tscn" id="6_8thhf"]
+[ext_resource type="PackedScene" uid="uid://dhk6j6eb6e3q" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/vn_choice_layer.tscn" id="7_7b6ek"]
+[ext_resource type="PackedScene" uid="uid://cvgf4c6gg0tsy" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/text_input_layer.tscn" id="8_txrel"]
+[ext_resource type="PackedScene" uid="uid://lx24i8fl6uo" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.tscn" id="9_5djtg"]
+[ext_resource type="Script" path="res://addons/dialogic/Resources/dialogic_style.gd" id="10_retpb"]
+
+[sub_resource type="Resource" id="Resource_npw8b"]
+script = ExtResource("1_jyy5g")
+scene = ExtResource("2_4n1mh")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_tya78"]
+script = ExtResource("1_jyy5g")
+scene = ExtResource("3_wgg6b")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_lte08"]
+script = ExtResource("1_jyy5g")
+scene = ExtResource("4_koxg5")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_8b5ka"]
+script = ExtResource("1_jyy5g")
+scene = ExtResource("5_uokx6")
+overrides = {
+"box_panel": "\"vn_textbox_default_panel.tres\""
+}
+
+[sub_resource type="Resource" id="Resource_scsen"]
+script = ExtResource("1_jyy5g")
+scene = ExtResource("6_8thhf")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_wdulx"]
+script = ExtResource("1_jyy5g")
+scene = ExtResource("7_7b6ek")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_ldbhx"]
+script = ExtResource("1_jyy5g")
+scene = ExtResource("8_txrel")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_qmpfn"]
+script = ExtResource("1_jyy5g")
+scene = ExtResource("9_5djtg")
+overrides = {}
+
+[resource]
+script = ExtResource("10_retpb")
+name = "mofo"
+base_overrides = {}
+layers = Array[ExtResource("1_jyy5g")]([SubResource("Resource_npw8b"), SubResource("Resource_tya78"), SubResource("Resource_lte08"), SubResource("Resource_8b5ka"), SubResource("Resource_scsen"), SubResource("Resource_wdulx"), SubResource("Resource_ldbhx"), SubResource("Resource_qmpfn")])
+metadata/_latest_layer = 3

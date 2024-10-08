@@ -50,3 +50,7 @@ shape = SubResource("CircleShape2D_ub44y")
 [node name="anim" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_pxrc7")
 animation = &"jalan"
+
+[node name="anchor" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="anchor"]

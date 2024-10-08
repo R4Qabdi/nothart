@@ -15,7 +15,7 @@ run/main_scene="res://scene n script/fmality/mainmenu.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 boot_splash/bg_color=Color(0.189904, 0.243726, 0.290078, 1)
 boot_splash/image="res://assets/logo.png"
-config/icon="res://assets/maling/icon.png"
+config/icon="res://assets/aikontrevis.png"
 
 [autoload]
 
@@ -62,6 +62,7 @@ translation/add_separator=false
 
 [display]
 
+window/size/mode=3
 window/stretch/mode="viewport"
 window/stretch/aspect="expand"
 

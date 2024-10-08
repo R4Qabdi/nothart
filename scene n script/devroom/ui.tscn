@@ -1,24 +1,18 @@
-[gd_scene load_steps=3 format=3 uid="uid://d1fkp8xl8edlt"]
+[gd_scene load_steps=4 format=3 uid="uid://d1fkp8xl8edlt"]
 
 [ext_resource type="Script" path="res://scene n script/devroom/ui.gd" id="1_xwel7"]
 [ext_resource type="PackedScene" uid="uid://dmr0fcamx7t56" path="res://addons/virtual_joystick/virtual_joystick_scene.tscn" id="2_fbrh4"]
+[ext_resource type="Theme" uid="uid://c6bbf84fvjspx" path="res://scene n script/fmality/defaultkayu.tres" id="3_01vkn"]
 
 [node name="Ui" type="CanvasLayer"]
 script = ExtResource("1_xwel7")
 
 [node name="Button2" type="Button" parent="."]
-offset_left = 55.0
-offset_top = 49.0
-offset_right = 160.0
-offset_bottom = 72.0
+offset_left = 64.0
+offset_top = 48.0
+offset_right = 168.0
+offset_bottom = 80.0
 text = "debug VN"
-
-[node name="Button" type="Button" parent="."]
-offset_left = 984.0
-offset_top = 24.0
-offset_right = 1088.0
-offset_bottom = 55.0
-text = "exit"
 
 [node name="Virtual Joystick" parent="." instance=ExtResource("2_fbrh4")]
 offset_top = -264.0
@@ -40,10 +34,47 @@ offset_right = 0.0
 offset_bottom = 0.0
 grow_horizontal = 0
 joystick_mode = 1
+use_input_actions = false
 action_left = "kiri"
 action_right = "kanan"
 action_up = "atas"
 action_down = "bawah"
 
+[node name="Control" type="Control" parent="."]
+clip_contents = true
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -240.0
+offset_bottom = 40.0
+grow_horizontal = 0
+
+[node name="BoxContainer" type="BoxContainer" parent="Control"]
+clip_contents = true
+layout_mode = 0
+offset_right = 240.0
+offset_bottom = 40.0
+alignment = 1
+
+[node name="Button" type="Button" parent="Control/BoxContainer"]
+layout_mode = 2
+theme = ExtResource("3_01vkn")
+text = "exit"
+
+[node name="Button" type="Button" parent="."]
+offset_left = 64.0
+offset_top = 8.0
+offset_right = 235.0
+offset_bottom = 40.0
+text = "debug random world"
+
+[node name="Button3" type="Button" parent="."]
+offset_left = 64.0
+offset_top = 88.0
+offset_right = 168.0
+offset_bottom = 120.0
+text = "debug idk"
+
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Control/BoxContainer/Button" to="." method="_on_button_pressed"]

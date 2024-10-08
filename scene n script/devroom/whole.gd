@@ -10,3 +10,7 @@ func _process(delta: float) -> void:
 	else :
 		pass
 	
+
+
+func _on_button_pressed() -> void:
+	$WalkerGenerator.generate()

@@ -68,7 +68,11 @@ node_type = 1
 tile_map = NodePath("../TileMap")
 generator = NodePath("../WalkerGenerator")
 
+[connection signal="animation_finished" from="rplayer/player/anchor/slash" to="rplayer/player" method="_on_slash_animation_finished"]
+[connection signal="mouse_entered" from="rplayer/player/Ui/serang" to="rplayer/player" method="_on_serang_mouse_entered"]
+[connection signal="mouse_exited" from="rplayer/player/Ui/serang" to="rplayer/player" method="_on_serang_mouse_exited"]
 [connection signal="pressed" from="rplayer/player/Ui/Button" to="." method="_on_button_pressed"]
 
 [editable path="rplayer/player"]
 [editable path="rplayer/player/Ui"]
+[editable path="rplayer/player/Ui/serang"]

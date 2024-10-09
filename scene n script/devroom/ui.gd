@@ -14,3 +14,7 @@ func _on_button_pressed() -> void:
 
 func _on_button_2_pressed() -> void:
 	Dialogic.start("siblok")
+
+
+func _on_serang_focus_exited() -> void:
+	print("kapan sih hilangnya?")

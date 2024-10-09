@@ -1,0 +1,60 @@
+[gd_scene load_steps=8 format=3 uid="uid://djlmve5q4byno"]
+
+[ext_resource type="Texture2D" uid="uid://bnpqkjqcyu1lv" path="res://assets/anim/sislash.png" id="1_jfjrs"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_weu75"]
+atlas = ExtResource("1_jfjrs")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hh5qq"]
+atlas = ExtResource("1_jfjrs")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_usdty"]
+atlas = ExtResource("1_jfjrs")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0ptlh"]
+atlas = ExtResource("1_jfjrs")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sq2mg"]
+atlas = ExtResource("1_jfjrs")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gofqf"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_weu75")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hh5qq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_usdty")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0ptlh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sq2mg")
+}],
+"loop": true,
+"name": &"play",
+"speed": 5.0
+}]
+
+[node name="slash" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_gofqf")
+animation = &"play"
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PackedVector2Array(-40, -32, -16, -32, 0, -16, 8, 0, 0, 16, -8, 24, -32, 24, -16, 40, 0, 40, 16, 32, 24, 24, 32, 8, 32, 8, 32, -16, 16, -32, 0, -40, -32, -40)

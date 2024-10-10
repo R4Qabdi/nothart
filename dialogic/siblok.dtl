@@ -1,4 +1,4 @@
-[style name="vnstyle"]
+[style]
 join meliss right
 meliss: halo, (nanti aku ganti ekspresinya
 update meliss left [animation="Shake Y" move_time="0.5"]

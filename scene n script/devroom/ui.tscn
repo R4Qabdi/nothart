@@ -68,7 +68,7 @@ alignment = 1
 [node name="Button" type="Button" parent="Control/BoxContainer"]
 layout_mode = 2
 theme = ExtResource("3_01vkn")
-text = "exit"
+text = "Menu"
 
 [node name="Button" type="Button" parent="."]
 offset_left = 64.0

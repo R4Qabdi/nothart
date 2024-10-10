@@ -1,7 +1,8 @@
-[gd_scene load_steps=12 format=3 uid="uid://h48uyueh48ve"]
+[gd_scene load_steps=13 format=3 uid="uid://h48uyueh48ve"]
 
 [ext_resource type="Script" path="res://scene n script/devroom/whole.gd" id="1_pf54f"]
 [ext_resource type="PackedScene" uid="uid://xisw61s1xlyh" path="res://scene n script/devroom/player.tscn" id="2_0hrn0"]
+[ext_resource type="Texture2D" uid="uid://722bgqf3w323" path="res://assets/aikontol.png" id="2_8y1rr"]
 [ext_resource type="PackedScene" uid="uid://d1fkp8xl8edlt" path="res://scene n script/devroom/ui.tscn" id="3_e8u54"]
 [ext_resource type="PackedScene" uid="uid://5hamefljrmvm" path="res://scene n script/devroom/tilemap.tscn" id="4_a1ygv"]
 [ext_resource type="Script" path="res://addons/gaea/generators/2D/walker_generator/walker_generator.gd" id="5_5xiis"]
@@ -39,6 +40,9 @@ modifiers = Array[ExtResource("6_wsnkv")]([])
 
 [node name="whole" type="Node2D"]
 script = ExtResource("1_pf54f")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_8y1rr")
 
 [node name="rplayer" type="Node" parent="."]
 

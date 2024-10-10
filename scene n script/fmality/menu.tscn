@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bf6d8bhi13ex1"]
+
+[ext_resource type="Texture2D" uid="uid://cvmlp5nxb2rer" path="res://addons/dialogic/Editor/HomePage/icon_bg.png" id="1_r25k0"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_r25k0")

@@ -172,7 +172,3 @@ func _reset():
 		for action in [action_left, action_right, action_down, action_up]:
 			if Input.is_action_pressed(action):
 				Input.action_release(action)
-
-
-func _on_gaje_released() -> void:
-	Input.action_press("serang")

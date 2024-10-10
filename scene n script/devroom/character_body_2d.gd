@@ -5,6 +5,9 @@ extends CharacterBody2D
 func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("serang"):
 		$ani.play("serang")
+		print("serang")
+	
+	
 	var direction := Input.get_vector("kiri","kanan","atas","bawah")
 	velocity = direction * SPEED * delta
 	if $Ui/serang and $Ui/serang.is_pressed:

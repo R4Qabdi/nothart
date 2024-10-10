@@ -18,3 +18,7 @@ func _on_button_2_pressed() -> void:
 
 func _on_serang_focus_exited() -> void:
 	print("kapan sih hilangnya?")
+
+
+func _on_gaje_released() -> void:
+	Input.action_press("serang")

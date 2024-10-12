@@ -1,0 +1,50 @@
+[gd_scene load_steps=3 format=3 uid="uid://benlfikia3m6a"]
+
+[ext_resource type="Texture2D" uid="uid://b45u74dl0ryxn" path="res://assets/menu/optionmenuspaly.png" id="1_gn86f"]
+[ext_resource type="Theme" uid="uid://c6bbf84fvjspx" path="res://scene n script/fmality/defaultkayu.tres" id="2_5womx"]
+
+[node name="save" type="CanvasLayer"]
+layer = 3
+
+[node name="root" type="Node2D" parent="."]
+
+[node name="back" type="TextureRect" parent="root"]
+offset_left = 384.0
+offset_top = 128.0
+offset_right = 768.0
+offset_bottom = 512.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("1_gn86f")
+
+[node name="save1" type="Button" parent="root"]
+offset_left = 496.0
+offset_top = 192.0
+offset_right = 656.0
+offset_bottom = 232.0
+theme = ExtResource("2_5womx")
+text = "save 1"
+
+[node name="save2" type="Button" parent="root"]
+offset_left = 496.0
+offset_top = 256.0
+offset_right = 656.0
+offset_bottom = 296.0
+theme = ExtResource("2_5womx")
+text = "save 2"
+
+[node name="save3" type="Button" parent="root"]
+offset_left = 496.0
+offset_top = 320.0
+offset_right = 656.0
+offset_bottom = 360.0
+theme = ExtResource("2_5womx")
+text = "save 3"
+
+[node name="save4" type="Button" parent="root"]
+offset_left = 496.0
+offset_top = 384.0
+offset_right = 656.0
+offset_bottom = 424.0
+theme = ExtResource("2_5womx")
+text = "save 4"

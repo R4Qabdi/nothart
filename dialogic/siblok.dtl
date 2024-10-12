@@ -5,3 +5,5 @@ update meliss left [animation="Shake Y" move_time="0.5"]
 meliss: yaya
 leave meliss [animation="Slide Out Right"]
 meliss: iyaa
+[voice volume="0.0"]
+update meliss center

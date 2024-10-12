@@ -1,12 +1,236 @@
-[gd_scene load_steps=5 format=3 uid="uid://d1fkp8xl8edlt"]
+[gd_scene load_steps=14 format=3 uid="uid://d1fkp8xl8edlt"]
 
 [ext_resource type="Script" path="res://scene n script/devroom/ui.gd" id="1_xwel7"]
 [ext_resource type="PackedScene" uid="uid://dmr0fcamx7t56" path="res://addons/virtual_joystick/virtual_joystick_scene.tscn" id="2_fbrh4"]
 [ext_resource type="Theme" uid="uid://c6bbf84fvjspx" path="res://scene n script/fmality/defaultkayu.tres" id="3_01vkn"]
+[ext_resource type="PackedScene" uid="uid://bf6d8bhi13ex1" path="res://scene n script/fmality/menu.tscn" id="4_6jgr2"]
+[ext_resource type="PackedScene" uid="uid://bst1tjhbtwf5d" path="res://scene n script/fmality/option.tscn" id="4_jnj6l"]
+[ext_resource type="PackedScene" uid="uid://benlfikia3m6a" path="res://scene n script/fmality/saves.tscn" id="5_33er1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_37jt6"]
 
+[sub_resource type="Animation" id="Animation_uu66r"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ani/menu/root:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ani/menu/root:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, -500)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ani/option/root:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("ani/option/root:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Virtual Joystick:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("serang:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("ani/save/root:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("ani/save/root:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_xpy3n"]
+resource_name = "keluar"
+length = 0.2
+
+[sub_resource type="Animation" id="Animation_aj10x"]
+resource_name = "masuk"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ani/menu/root:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ani/menu/root:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, -500), Vector2(0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Virtual Joystick:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("serang:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_5ujn2"]
+resource_name = "opmasuk"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ani/option/root:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(350, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ani/option/root:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_ioryh"]
+resource_name = "savmasuk"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ani/save/root:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-350, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ani/save/root:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_0ujpx"]
+_data = {
+"RESET": SubResource("Animation_uu66r"),
+"keluar": SubResource("Animation_xpy3n"),
+"masuk": SubResource("Animation_aj10x"),
+"opmasuk": SubResource("Animation_5ujn2"),
+"savmasuk": SubResource("Animation_ioryh")
+}
+
 [node name="Ui" type="CanvasLayer"]
+layer = 2
 script = ExtResource("1_xwel7")
 
 [node name="Button2" type="Button" parent="."]
@@ -65,28 +289,65 @@ offset_right = 240.0
 offset_bottom = 40.0
 alignment = 1
 
-[node name="Button" type="Button" parent="Control/BoxContainer"]
+[node name="menu" type="Button" parent="Control/BoxContainer"]
 layout_mode = 2
 theme = ExtResource("3_01vkn")
+toggle_mode = true
 text = "Menu"
 
-[node name="Button" type="Button" parent="."]
+[node name="debugworld" type="Button" parent="."]
 offset_left = 64.0
 offset_top = 8.0
 offset_right = 235.0
 offset_bottom = 40.0
 text = "debug random world"
 
-[node name="Button3" type="Button" parent="."]
+[node name="debugidk" type="Button" parent="."]
 offset_left = 64.0
 offset_top = 88.0
 offset_right = 168.0
 offset_bottom = 120.0
 text = "debug idk"
 
+[node name="ani" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_0ujpx")
+}
+
+[node name="save" parent="ani" instance=ExtResource("5_33er1")]
+
+[node name="root" parent="ani/save" index="0"]
+modulate = Color(1, 1, 1, 0)
+
+[node name="option" parent="ani" instance=ExtResource("4_jnj6l")]
+
+[node name="root" parent="ani/option" index="0"]
+modulate = Color(1, 1, 1, 0)
+
+[node name="menu" parent="ani" instance=ExtResource("4_6jgr2")]
+layer = 3
+
+[node name="root" parent="ani/menu" index="0"]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(0, -500)
+
+[node name="save" parent="ani/menu/root" index="3"]
+toggle_mode = true
+
+[node name="load" parent="ani/menu/root" index="4"]
+toggle_mode = true
+
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
 [connection signal="focus_exited" from="serang" to="." method="_on_serang_focus_exited"]
 [connection signal="released" from="serang/gaje" to="." method="_on_gaje_released"]
-[connection signal="pressed" from="Control/BoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="toggled" from="Control/BoxContainer/menu" to="." method="_on_menu_toggled"]
+[connection signal="pressed" from="ani/option/root/exit" to="." method="_on_exitop_pressed"]
+[connection signal="pressed" from="ani/menu/root/resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="ani/menu/root/option" to="." method="_on_option_pressed"]
+[connection signal="toggled" from="ani/menu/root/save" to="." method="_on_save_toggled"]
+[connection signal="pressed" from="ani/menu/root/exit" to="." method="_on_exit_pressed"]
 
 [editable path="serang"]
+[editable path="ani/save"]
+[editable path="ani/option"]
+[editable path="ani/menu"]

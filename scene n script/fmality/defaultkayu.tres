@@ -28,3 +28,6 @@ Button/styles/focus = ExtResource("2_sxgt0")
 Button/styles/hover = ExtResource("2_sxgt0")
 Button/styles/normal = ExtResource("2_sxgt0")
 Button/styles/pressed = ExtResource("2_sxgt0")
+Label/colors/font_color = Color(0.435294, 0.352941, 0.164706, 1)
+Label/font_sizes/font_size = 24
+Label/fonts/font = ExtResource("1_tt4l4")

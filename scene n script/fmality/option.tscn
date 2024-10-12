@@ -1,0 +1,98 @@
+[gd_scene load_steps=3 format=3 uid="uid://bst1tjhbtwf5d"]
+
+[ext_resource type="Texture2D" uid="uid://b45u74dl0ryxn" path="res://assets/menu/optionmenuspaly.png" id="1_y1sm4"]
+[ext_resource type="Theme" uid="uid://c6bbf84fvjspx" path="res://scene n script/fmality/defaultkayu.tres" id="2_mhaak"]
+
+[node name="option" type="CanvasLayer"]
+layer = 3
+
+[node name="root" type="Node2D" parent="."]
+
+[node name="back" type="TextureRect" parent="root"]
+offset_left = 384.0
+offset_top = 128.0
+offset_right = 768.0
+offset_bottom = 512.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("1_y1sm4")
+
+[node name="resume" type="CheckButton" parent="root"]
+offset_left = 472.0
+offset_top = 160.0
+offset_right = 680.0
+offset_bottom = 200.0
+theme = ExtResource("2_mhaak")
+text = "show joystick"
+
+[node name="masvol" type="HSlider" parent="root"]
+offset_left = 472.0
+offset_top = 216.0
+offset_right = 680.0
+offset_bottom = 256.0
+theme = ExtResource("2_mhaak")
+
+[node name="Label" type="Label" parent="root/masvol"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = -16.0
+offset_right = 146.0
+offset_bottom = 14.0
+theme = ExtResource("2_mhaak")
+text = "Master volume"
+
+[node name="mvol" type="HSlider" parent="root"]
+offset_left = 472.0
+offset_top = 264.0
+offset_right = 680.0
+offset_bottom = 304.0
+theme = ExtResource("2_mhaak")
+
+[node name="Label" type="Label" parent="root/mvol"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = -16.0
+offset_right = 146.0
+offset_bottom = 14.0
+theme = ExtResource("2_mhaak")
+text = "Music volume"
+
+[node name="evol" type="HSlider" parent="root"]
+offset_left = 472.0
+offset_top = 312.0
+offset_right = 680.0
+offset_bottom = 352.0
+theme = ExtResource("2_mhaak")
+
+[node name="Label" type="Label" parent="root/evol"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = -16.0
+offset_right = 146.0
+offset_bottom = 14.0
+theme = ExtResource("2_mhaak")
+text = "SFX volume"
+
+[node name="save" type="CheckButton" parent="root"]
+offset_left = 480.0
+offset_top = 352.0
+offset_right = 672.0
+offset_bottom = 392.0
+theme = ExtResource("2_mhaak")
+text = "Full screen"
+
+[node name="load" type="Button" parent="root"]
+offset_left = 496.0
+offset_top = 400.0
+offset_right = 656.0
+offset_bottom = 440.0
+theme = ExtResource("2_mhaak")
+text = "fufufafa"
+
+[node name="exit" type="Button" parent="root"]
+offset_left = 496.0
+offset_top = 448.0
+offset_right = 656.0
+offset_bottom = 488.0
+theme = ExtResource("2_mhaak")
+text = "back"

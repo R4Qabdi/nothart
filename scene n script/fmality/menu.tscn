@@ -1,10 +1,57 @@
-[gd_scene load_steps=2 format=3 uid="uid://bf6d8bhi13ex1"]
+[gd_scene load_steps=3 format=3 uid="uid://bf6d8bhi13ex1"]
 
-[ext_resource type="Texture2D" uid="uid://cvmlp5nxb2rer" path="res://addons/dialogic/Editor/HomePage/icon_bg.png" id="1_r25k0"]
+[ext_resource type="Texture2D" uid="uid://b45u74dl0ryxn" path="res://assets/menu/optionmenuspaly.png" id="1_r2b7t"]
+[ext_resource type="Theme" uid="uid://c6bbf84fvjspx" path="res://scene n script/fmality/defaultkayu.tres" id="2_wd7b7"]
 
-[node name="CanvasLayer" type="CanvasLayer"]
+[node name="menu" type="CanvasLayer"]
 
-[node name="TextureRect" type="TextureRect" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
-texture = ExtResource("1_r25k0")
+[node name="root" type="Node2D" parent="."]
+
+[node name="back" type="TextureRect" parent="root"]
+offset_left = 384.0
+offset_top = 64.0
+offset_right = 768.0
+offset_bottom = 576.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("1_r2b7t")
+
+[node name="resume" type="Button" parent="root"]
+offset_left = 496.0
+offset_top = 168.0
+offset_right = 656.0
+offset_bottom = 208.0
+theme = ExtResource("2_wd7b7")
+text = "resume"
+
+[node name="option" type="Button" parent="root"]
+offset_left = 496.0
+offset_top = 232.0
+offset_right = 656.0
+offset_bottom = 272.0
+theme = ExtResource("2_wd7b7")
+text = "option"
+
+[node name="save" type="Button" parent="root"]
+offset_left = 496.0
+offset_top = 296.0
+offset_right = 656.0
+offset_bottom = 336.0
+theme = ExtResource("2_wd7b7")
+text = "save"
+
+[node name="load" type="Button" parent="root"]
+offset_left = 496.0
+offset_top = 360.0
+offset_right = 656.0
+offset_bottom = 400.0
+theme = ExtResource("2_wd7b7")
+text = "load"
+
+[node name="exit" type="Button" parent="root"]
+offset_left = 496.0
+offset_top = 424.0
+offset_right = 656.0
+offset_bottom = 464.0
+theme = ExtResource("2_wd7b7")
+text = "exit"

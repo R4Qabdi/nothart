@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dkmyhehbonj56"
-path="res://.godot/imported/aikontrevis.png-8b97b38765bc65285e3456e0030c2869.ctex"
+path="res://.godot/imported/aikontrevis.png-30e10e389a071872609c067b5ba9bfea.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/aikontrevis.png"
-dest_files=["res://.godot/imported/aikontrevis.png-8b97b38765bc65285e3456e0030c2869.ctex"]
+source_file="res://assets/icons/aikontrevis.png"
+dest_files=["res://.godot/imported/aikontrevis.png-30e10e389a071872609c067b5ba9bfea.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qt3i15cvmalq"
-path="res://.godot/imported/aikontrevisb.png-8aa8005b88f6f9fa2de91a76ecc01f4b.ctex"
+uid="uid://722bgqf3w323"
+path="res://.godot/imported/aikontol.png-93e417559ef63b14ae4f07c8dc616aef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/aikontrevisb.png"
-dest_files=["res://.godot/imported/aikontrevisb.png-8aa8005b88f6f9fa2de91a76ecc01f4b.ctex"]
+source_file="res://assets/icons/aikontol.png"
+dest_files=["res://.godot/imported/aikontol.png-93e417559ef63b14ae4f07c8dc616aef.ctex"]
 
 [params]
 

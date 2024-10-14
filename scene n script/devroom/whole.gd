@@ -6,6 +6,8 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	if Input.is_key_pressed(KEY_E):
 		Dialogic.start("siblok")
+		$"rplayer/player/Ui/Virtual Joystick".hide()
+		$rplayer/player/Ui/serang.hide()
 	else :
 		pass
 
